@@ -1,23 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-color: #ff7a7a;
-}
-
-form {
-  background-color: wheat;
-  padding: 2rem;
+  max-width: 375px;
+  background: #ff7a7a url(../images/bg-intro-mobile.png) no-repeat fixed 100%;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,37 +18,59 @@ form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0.5rem;
+  height: 100vh;
 }
 
-form .d {
-  position: relative;
+main {
+  margin: 1.5rem;
 }
 
-form .d::before {
-  content: "";
-  position: relative;
-  left: 8.5rem;
-  top: 5rem;
-  width: 24px;
-  height: 24px;
-  background-color: red;
+.top {
+  text-align: center;
 }
 
-form input[type="text"] {
-  padding: 1rem;
-  border: none;
-  border-radius: 0.3rem;
-  outline: none;
+.top h1 {
+  font-weight: 600;
+  color: white;
 }
 
-form p {
-  display: none;
-  font-size: 8px;
-  font-weight: 500;
-  color: red;
-  position: relative;
-  right: 0;
-  left: 25%;
+.top p {
+  line-height: 1.5rem;
+  color: #ebebeb;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom .trail {
+  color: white;
+  background-color: #6055a5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom .trail p {
+  width: 74%;
 }
 /*# sourceMappingURL=style.css.map */
