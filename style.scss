@@ -1,7 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-
+// COLORS
 $Red: #ff7a7a;
 $Green: #38cc8c;
 $Blue: #6055a5;
 $Dark_Blue: #3e3c49;
 $Grayish_Blue: #b9b6d3;
+
+// TYPOGRAPHY
+$font_size: 16px;
+$font_family: "Poppins", sans-serif;
+
+// MIXINS
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @content;
+}
+body {
+  @include flex();
+  height: 100vh;
+  font-family: $font_family;
+  font-size: $font_size;
+  background-color: #ff7a7a;
+}
+
+form {
+  background-color: wheat;
+  padding: 2rem;
+  @include flex();
+  flex-direction: column;
+  gap: 0.5rem;
+
+  .d {
+      position: relative;
+    &::before {
+      content: "";
+      position: relative;
+    left: 8.5rem;
+    top: 5rem;
+    width: 24px;
+    height: 24px;
+      background-color: red;
+      
+    }
+  }
+  input[type="text"] {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    outline: none;
+  }
+  p {
+    display: none;
+    font-size: 8px;
+    font-weight: 500;
+    color: red;
+    position: relative;
+    right: 0;
+    left: 25%;
+  }
+}
