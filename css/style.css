@@ -7,6 +7,7 @@
 }
 
 body {
+  min-width: 375px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background: #ff7a7a url(../images/bg-intro-mobile.png) no-repeat fixed 100%;
@@ -70,8 +71,8 @@ main {
   padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,19 +97,6 @@ main {
           box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.bottom section p {
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-  color: #b9b6d3;
-  font-size: 0.7rem;
-}
-
-.bottom section p span {
-  color: #ff7a7a;
-  font-weight: bold;
-}
-
 .bottom form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,7 +111,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0.5rem;
+  margin: 1rem 0.5rem 1.5rem;
 }
 
 .bottom form input[type="text"],
@@ -134,6 +122,7 @@ main {
   border-radius: 0.5rem;
   padding: 1rem;
   border: 0.1rem rgba(199, 198, 198, 0.76) solid;
+  outline: none;
 }
 
 .bottom form button {
@@ -145,5 +134,53 @@ main {
   color: white;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
           box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.bottom form p {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  color: #b9b6d3;
+  font-size: 0.7rem;
+  line-height: 1.3rem;
+}
+
+.bottom form p span {
+  color: #ff7a7a;
+  font-weight: bold;
+}
+
+@media (min-width: 700px) {
+  body {
+    max-width: 1440px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #ff7a7a url(../images/bg-intro-desktop.png) no-repeat fixed 100%;
+    background-size: cover;
+  }
+  main {
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+  .top {
+    text-align: left;
+    width: 38%;
+  }
+  .bottom {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
