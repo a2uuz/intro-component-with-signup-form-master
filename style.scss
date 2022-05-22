@@ -25,7 +25,7 @@ $font_family: "Poppins", sans-serif;
   padding: 0;
 }
 body {
-   min-width: 375px;
+  min-width: 375px;
   font-family: $font_family;
   font-size: $font_size;
   background: $Red url(../images/bg-intro-mobile.png) no-repeat fixed 100%;
@@ -80,8 +80,6 @@ main {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
       rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
-
   }
 
   form {
@@ -89,11 +87,46 @@ main {
     flex-direction: column;
     margin: 1rem 0.5rem 1.5rem;
 
+    .form-control {
+      position: relative;
+      width: 100%;
+
+      &.success input {
+        border: solid $Green 2px;
+      }
+      &.error input {
+        border: solid $Red 2px;
+      }
+
+      img {
+        visibility: hidden;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+
+      &.error img {
+        visibility: visible;
+      }
+
+      small {
+        visibility: hidden;
+        padding: 0.5rem 0;
+        position: relative;
+        float: right;
+      }
+
+      &.error small {
+        visibility: visible;
+        color: $Red;
+      }
+    }
+
     input[type="text"],
     input[type="email"],
     input[type="password"] {
       width: 100%;
-      margin-bottom: 1.5rem;
+      // margin-bottom: 1.5rem;
       border-radius: 0.5rem;
       padding: 1rem;
       border: 0.1rem rgba(199, 198, 198, 0.76) solid;
@@ -112,7 +145,7 @@ main {
       cursor: pointer;
     }
 
-     p {
+    p {
       margin: 0 auto;
       text-align: center;
       width: 90%;
