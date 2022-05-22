@@ -1,10 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  max-width: 375px;
   background: #ff7a7a url(../images/bg-intro-mobile.png) no-repeat fixed 100%;
   background-size: cover;
+}
+
+main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,11 +27,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-}
-
-main {
-  margin: 1.5rem;
+  margin: 2rem 1.5rem;
+  gap: 4rem;
 }
 
 .top {
@@ -40,6 +46,7 @@ main {
 }
 
 .bottom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,12 +56,18 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
 }
 
-.bottom .trail {
+.bottom .trial {
+  width: 100%;
   color: white;
   background-color: #6055a5;
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   text-align: center;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -70,7 +83,67 @@ main {
           align-items: center;
 }
 
-.bottom .trail p {
+.bottom .trial p {
   width: 74%;
+}
+
+.bottom section {
+  width: 100%;
+  background-color: #fffffe;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.bottom section p {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  color: #b9b6d3;
+  font-size: 0.7rem;
+}
+
+.bottom section p span {
+  color: #ff7a7a;
+  font-weight: bold;
+}
+
+.bottom form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0.5rem;
+}
+
+.bottom form input[type="text"],
+.bottom form input[type="email"],
+.bottom form input[type="password"] {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 0.1rem rgba(199, 198, 198, 0.76) solid;
+}
+
+.bottom form button {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1.3rem;
+  border: none;
+  background-color: #38cc8c;
+  color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 /*# sourceMappingURL=style.css.map */
