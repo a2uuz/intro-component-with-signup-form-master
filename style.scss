@@ -19,25 +19,29 @@ $font_family: "Poppins", sans-serif;
   @content;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: $font_family;
   font-size: $font_size;
-  max-width: 375px;
   background: $Red url(../images/bg-intro-mobile.png) no-repeat fixed 100%;
   background-size: cover;
-  @include flex();
-  flex-direction: column;
-  height: 100vh;
 }
 
 main {
-  margin: 1.5rem;
+  @include flex();
+  flex-direction: column;
+  margin: 2rem 1.5rem;
+  gap: 4rem;
 }
 
 .top {
   text-align: center;
   h1 {
-      font-weight: 600;
+    font-weight: 600;
     color: white;
   }
   p {
@@ -47,11 +51,16 @@ main {
 }
 
 .bottom {
+  width: 100%;
   @include flex();
-  .trail {
+  flex-direction: column;
+  gap: 2rem;
+
+  .trial {
+    width: 100%;
     color: white;
     background-color: $Blue;
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
@@ -61,6 +70,54 @@ main {
 
     p {
       width: 74%;
+    }
+  }
+
+  section {
+    width: 100%;
+    background-color: rgb(255, 255, 254);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+    p {
+      margin: 0 auto;
+      text-align: center;
+      width: 90%;
+      color: $Grayish_Blue;
+      font-size: 0.7rem;
+      span {
+        color: $Red;
+        font-weight: bold;
+      }
+    }
+  }
+
+  form {
+    @include flex();
+    flex-direction: column;
+    margin: 1rem 0.5rem;
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      margin-bottom: 1.5rem;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      border: 0.1rem rgba(199, 198, 198, 0.76) solid;
+    }
+
+    button {
+      width: 100%;
+      border-radius: 0.5rem;
+      padding: 1.3rem;
+      border: none;
+      background-color: $Green;
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
   }
 }
