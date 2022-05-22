@@ -31,31 +31,48 @@
           <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
         </div>
         <section>
-          <form onsubmit="return false">
-            <input
-              type="text"
-              name="firstname"
-              id="firstname"
-              placeholder="First Name"
-            />
-            <input
-              type="text"
-              name="lastname"
-              id="lastname"
-              placeholder="Last Name"
-            />
-            <input
-              type="email"
-              name="emailadress"
-              id="email"
-              placeholder="Email Adress"
-            />
-            <input
-              type="password"
-              name="pass"
-              id="pass"
-              placeholder="Password"
-            />
+          <form action="/" method="get">
+            <div class="form-control">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First Name"
+              />
+              <img src="./images/icon-error.svg" alt="error-svg" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last Name"
+              />
+              <img src="./images/icon-error.svg" alt="error-svg" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <input
+                type="email"
+                name="emailadress"
+                id="email"
+                placeholder="Email Adress"
+              />
+              <img src="./images/icon-error.svg" alt="error-svg" />
+              <small>Error Message</small>
+            </div>
+            <div class="form-control">
+              <input
+                type="password"
+                name="pass"
+                id="pass"
+                placeholder="Password"
+              />
+              <img src="./images/icon-error.svg" alt="error-svg" />
+              <small>Error Message</small>
+            </div>
+
             <button type="submit">CLAIM YOUR FREE TRIAL</button>
             <p>
               By clicking the button, you are agreeing to our
