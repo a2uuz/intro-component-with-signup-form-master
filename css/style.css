@@ -114,11 +114,46 @@ main {
   margin: 1rem 0.5rem 1.5rem;
 }
 
+.bottom form .form-control {
+  position: relative;
+  width: 100%;
+}
+
+.bottom form .form-control.success input {
+  border: solid #38cc8c 2px;
+}
+
+.bottom form .form-control.error input {
+  border: solid #ff7a7a 2px;
+}
+
+.bottom form .form-control img {
+  visibility: hidden;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.bottom form .form-control.error img {
+  visibility: visible;
+}
+
+.bottom form .form-control small {
+  visibility: hidden;
+  padding: 0.5rem 0;
+  position: relative;
+  float: right;
+}
+
+.bottom form .form-control.error small {
+  visibility: visible;
+  color: #ff7a7a;
+}
+
 .bottom form input[type="text"],
 .bottom form input[type="email"],
 .bottom form input[type="password"] {
   width: 100%;
-  margin-bottom: 1.5rem;
   border-radius: 0.5rem;
   padding: 1rem;
   border: 0.1rem rgba(199, 198, 198, 0.76) solid;
