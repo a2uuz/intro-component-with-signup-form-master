@@ -139,6 +139,7 @@ main {
 }
 
 .bottom form .form-control small {
+  font-style: italic;
   visibility: hidden;
   padding: 0.5rem 0;
   position: relative;
