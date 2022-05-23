@@ -4,6 +4,5 @@
 
 ## Welcome! 👋
 
-[Here's the Live Site](https://a2uuz.github.io/intro-component-with-signup-form-master/) challenges help you improve your coding skills by building realistic projects.
-
+[Here's the Live Site](https://a2uuz.github.io/intro-component-with-signup-form-master/)
 **Thanks for checking out my work!** 🚀
